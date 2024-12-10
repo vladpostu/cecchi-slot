@@ -1,0 +1,99 @@
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background: lightgrey;
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 300px;
+    border: 1px solid black;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.reels {
+    margin: 0px 10px;
+}
+
+.reel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.reels-m2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.reels-m1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    transition: .5s;
+}
+
+.reels-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    transition: .5s;
+}
+
+.reels-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    transition: .5s;
+}
+
+.reel {
+    width: 300px;
+    position: relative;
+}
+
+.reel img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.spin-btn {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
