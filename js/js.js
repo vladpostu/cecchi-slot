@@ -10,7 +10,7 @@ function spinBtnClick() {
 
     let imgs = document.querySelectorAll('.reels-m2 .reel img')
     imgs.forEach((img) => {
-        img.src = "./imgs/reel-" + (Math.floor(Math.random() * 3) + 1) + ".png"
+        img.src = "./imgs/reel-" + (Math.floor(Math.random() * 1) + 1) + ".png"
 
         if (img.src == "./imgs/reel-1.png") {
             jackpot++;
