@@ -14,9 +14,11 @@
     height: 300px;
     z-index: 0;
     overflow: hidden;
+    
 }
 
 .reels {
+
 }
 
 .reel-container {
@@ -46,7 +48,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    transition: .5s;
+    transition: .3s linear;
 }
 
 .reels-0 {
@@ -59,7 +61,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
 
-    transition: .5s;
+    transition: .3s linear;
 }
 
 .reels-1 {
@@ -72,18 +74,26 @@
     transform: translateX(-50%);
     width: 100%;
 
-    transition: .5s;
+    transition: .3s linear;
 }
 
 .reel {
+    height: 300px;
     width: 300px;
     position: relative;
 }
 
-.reel img {
+.reel > * {
     width: 100%;
     border: 1px solid black;
+    background: lightgray;
 }
+
+/* .reel video {
+    width: 100%;
+    border: 1px solid black;
+    background: lightgray;
+} */
 
 .spin-btn {
     position: absolute;
