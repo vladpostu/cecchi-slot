@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .wrap {
     width: 100vw;
     height: 100vh;
@@ -5,17 +10,23 @@
     z-index: 0;
 }
 
+
+
+/* Container for centering */
 .container {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 300px;
-    z-index: 0;
-    overflow: hidden;
-    
+    left: 50%;  /* Position from the left */
+    top: 50%;   /* Position from the top */
+    transform: translate(-50%, -50%); /* Offset by half of its width/height to perfectly center */
+    width: 80%;  /* Set width to 80% of the parent (viewport) */
+    height: 300px; /* Fixed height */
+    z-index: 0;  /* Ensures it stays below other elements */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex;  /* Enables Flexbox layout */
+    justify-content: center;  /* Center children horizontally */
+    align-items: center;  /* Center children vertically */
 }
+
 
 .reels {
 
@@ -81,6 +92,7 @@
     height: 300px;
     width: 300px;
     position: relative;
+    margin: 0 10px;
 }
 
 .reel > * {
@@ -104,4 +116,12 @@
     height: 50px;
     font-size: 1.5em;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for mobile */
+        height: 300px; /* Ensure it's still filling the screen height */
+        padding-top: 70px;
+    }
 }
