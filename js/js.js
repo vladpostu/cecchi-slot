@@ -55,7 +55,7 @@ function jackpot_trigger() {
                 video.playsInline = true;
 
                 let source = document.createElement("source");
-                source.src = "/imgs/video.mp4";
+                source.src = "cecchi-slot/imgs/video.mp4";
                 source.type = "video/mp4";
                 video.appendChild(source);
 
