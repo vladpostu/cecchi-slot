@@ -52,6 +52,7 @@ function jackpot_trigger() {
                 video.loop = true;
                 video.muted = true;
                 video.autoplay = true;
+                video.playsInline = true;
 
                 let source = document.createElement("source");
                 source.src = "/imgs/video.mp4";
