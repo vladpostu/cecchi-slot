@@ -55,11 +55,11 @@ function jackpot_trigger() {
                 video.playsInline = true;
 
                 let source = document.createElement("source");
-                console.log(source.src); // To verify the correct URL
-
-                source.src = "cecchi-slot/imgs/video.mp4";
+                source.src = "https://vladpostu.github.io/cecchi-slot/imgs/video.mp4";
                 source.type = "video/mp4";
                 video.appendChild(source);
+
+                console.log(source.src);
 
                 img.replaceWith(video);
             }
@@ -115,8 +115,6 @@ spinBtn.addEventListener('click', () => {
 })
 
 
-let video = document.querySelector('#video');
-video.play();
 
 
 
